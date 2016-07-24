@@ -1,0 +1,80 @@
+[19-Mar-2012 08:15:47] PHP Warning:  require_once(scribd.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php on line 9
+[19-Mar-2012 08:15:47] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'scribd.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php on line 9
+[19-Mar-2012 08:20:41] PHP Fatal error:  Class 'Scribd' not found in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php on line 145
+[19-Mar-2012 12:39:01] PHP Fatal error:  Uncaught SoapFault exception: [S:Server] The Login and/or Password did not match our records in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php:182
+Stack trace:
+#0 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(182): SoapClient->__call('createUploadSes...', Array)
+#1 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(182): SoapClient->createUploadSessionKey('emiecs_viphp', 'csemie', -1)
+#2 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(132): sendToFourShared('Hello world!', '/home/cossack1/...')
+#3 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(23): proceessPDF()
+#4 {main}
+  thrown in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php on line 182
+[19-Mar-2012 12:40:47] PHP Fatal error:  Uncaught SoapFault exception: [S:Server] The Login and/or Password did not match our records in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php:182
+Stack trace:
+#0 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(182): SoapClient->__call('createUploadSes...', Array)
+#1 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(182): SoapClient->createUploadSessionKey('emiecs_viphp', 'csemie', -1)
+#2 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(132): sendToFourShared('Lorem Ipsum Tex...', '/home/cossack1/...')
+#3 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(23): proceessPDF()
+#4 {main}
+  thrown in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php on line 182
+[19-Mar-2012 12:54:43] PHP Fatal error:  Uncaught SoapFault exception: [S:Server] The Login and/or Password did not match our records in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php:292
+Stack trace:
+#0 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(292): SoapClient->__call('createUploadSes...', Array)
+#1 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(292): SoapClient->createUploadSessionKey('emiecs_viphp', 'csemie', -1)
+#2 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(124): sendToFourShared('Bleach (manga)', '/home/cossack1/...')
+#3 {main}
+  thrown in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php on line 292
+[19-Mar-2012 13:30:58] PHP Fatal error:  Cannot redeclare insertreturnurltable() (previously declared in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php:138) in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/sendtofilesharingsite.php on line 113
+[19-Mar-2012 13:31:45] PHP Fatal error:  Cannot redeclare sendtoscribd() (previously declared in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php:138) in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/sendtofilesharingsite.php on line 131
+[21-Mar-2012 15:17:12] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unauthorized' in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/scribd.php:219
+Stack trace:
+#0 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/scribd.php(54): Scribd->postRequest('docs.uploadFrom...', Array)
+#1 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/sendtofilesharingsite.php(141): Scribd->uploadFromUrl('http://healthdr...', NULL, 'public', NULL)
+#2 /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php(66): sendToScribd('james test add ...', 'http://healthdr...')
+#3 {main}
+  thrown in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/scribd.php on line 219
+[23-Mar-2012 06:10:23] PHP Warning:  Missing argument 3 for sendSlideShare(), called in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php on line 67 and defined in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/sendtofilesharingsite.php on line 144
+[23-Mar-2012 06:11:44] PHP Warning:  Missing argument 3 for sendSlideShare(), called in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php on line 67 and defined in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/sendtofilesharingsite.php on line 144
+[23-Mar-2012 06:15:52] PHP Warning:  Missing argument 3 for sendSlideShare(), called in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/processpdf.php on line 67 and defined in /home/cossack1/public_html/pdfconverter/wp-content/plugins/exponentmediapdfconverter/sendtofilesharingsite.php on line 144
+[03-Jul-2012 12:13:12] WordPress database error MySQL server has gone away for query 
+			INSERT INTO 
+				`wp_pdf_returned_urls`
+			(`post_id`, `sn`, `sn_username`, `returnurl`)
+				VALUES
+			('16','box','','http://www.box.com/s/')
+		 made by insertReturnUrlTable
+[03-Jul-2012 12:13:12] WordPress database error MySQL server has gone away for query 
+			INSERT INTO 
+				`wp_pdf_returned_urls`
+			(`post_id`, `sn`, `sn_username`, `returnurl`)
+				VALUES
+			('16','scribd','','http://www.scribd.com/doc/98976793/')
+		 made by insertReturnUrlTable
+[03-Jul-2012 12:13:12] WordPress database error MySQL server has gone away for query 
+			INSERT INTO 
+				`wp_pdf_returned_urls`
+			(`post_id`, `sn`, `sn_username`, `returnurl`)
+				VALUES
+			('16','slideshare','','http://www.slideshare.net/emiecs_viphp/image-align-left-13526904')
+		 made by insertReturnUrlTable
+[03-Jul-2012 12:13:12] WordPress database error MySQL server has gone away for query 
+			INSERT INTO 
+				`wp_pdf_returned_urls`
+			(`post_id`, `sn`, `sn_username`, `returnurl`)
+				VALUES
+			('16','sendspace','','http://www.sendspace.com/file/')
+		 made by insertReturnUrlTable
+[03-Jul-2012 12:13:12] WordPress database error MySQL server has gone away for query 
+			INSERT INTO 
+				`wp_pdf_returned_urls`
+			(`post_id`, `sn`, `sn_username`, `returnurl`)
+				VALUES
+			('16','crocko','','http://www.crocko.com/9F697C84C32D4197A0E4DF83AB3744AD/Image+Align+Left.pdf')
+		 made by insertReturnUrlTable
+[03-Jul-2012 12:13:12] WordPress database error MySQL server has gone away for query 
+			INSERT INTO 
+				`wp_pdf_returned_urls`
+			(`post_id`, `sn`, `sn_username`, `returnurl`)
+				VALUES
+			('16','ifileit','','')
+		 made by insertReturnUrlTable
